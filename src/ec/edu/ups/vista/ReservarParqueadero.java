@@ -518,7 +518,7 @@ public class ReservarParqueadero extends javax.swing.JInternalFrame {
 
         lblTiempo.setText("TIEMPO");
 
-        cmbxTiempo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--ELIJA UNA OPCION--", "DIA", "SEMANA", "MES" }));
+        cmbxTiempo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--ELIJA UNA OPCION--", "DIA", "SEMANA" }));
 
         lblPagos.setText("DIA: $3,00      SEMANA: $18,00");
 

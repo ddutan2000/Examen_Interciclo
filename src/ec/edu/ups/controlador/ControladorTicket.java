@@ -66,7 +66,13 @@ public class ControladorTicket {
             DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm:ss");
             String fechaDeIngreso = dateFormat.format(date);
             archivos.writeUTF(fechaDeIngreso);
-            archivos.writeUTF(eliminar19bytes);
+            if(ticket.getFechaDeSalida()==null){
+             archivos.writeUTF(eliminar19bytes);   
+            }else{
+            Date date1 = ticket.getFechaDeSalida();
+            String fechaDeSalida = dateFormat.format(date1);
+            archivos.writeUTF(fechaDeSalida); 
+            }
             archivos.writeDouble(ticket.getTotal());
             archivos.writeUTF(ticket.getVehiculo().getPlaca());
             controladorP.reservar(ticket.getPuesto());
