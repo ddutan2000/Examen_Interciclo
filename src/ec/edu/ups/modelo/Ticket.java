@@ -150,7 +150,7 @@ public class Ticket {
                 if (redondiado == 0) {
                     this.setTotal(precio);
                 } else {
-                    this.setTotal(precio * (redondiado+1));
+                    this.setTotal(precio * (redondiado));
                 }
             } catch (ParseException ex) {
                 Logger.getLogger(Ticket.class.getName()).log(Level.SEVERE, null, ex);
@@ -167,7 +167,7 @@ public class Ticket {
             if (redondiado == 0) {
                 this.setTotal(precio);
             } else {
-                this.setTotal(precio * (redondiado+1));
+                this.setTotal(precio * (redondiado));
             }
 
         } else if (tipo.equals("SEMANA  ")) {
@@ -180,7 +180,7 @@ public class Ticket {
             if (redondiado == 0) {
                 this.setTotal(precio);
             } else {
-                this.setTotal(precio * (redondiado+1));
+                this.setTotal(precio * (redondiado));
             }
 
         } /*else if (tipo.equals("MES     ")) {
