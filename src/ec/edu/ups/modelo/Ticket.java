@@ -226,7 +226,7 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "\nTicket" + "\nNumero: " + numero + "\nTipo: " + tipo + "\nFecha de ingreso: " + fechaDeIngreso + "\nFecha de salida: " + fechaDeSalida + "\nTotal:" + total + "\nHoras:" + horas + "\nVehiculo:" + vehiculo + "\nPuesto:" + puesto ;
+        return "\nTicket" + "\nNumero: " + numero + "\nTipo: " + tipo + "\nFecha de ingreso: " + fechaDeIngreso + "\nFecha de salida: " + fechaDeSalida + "\nTotal:" + total + "\nVehiculo:" + vehiculo + "\nPuesto:" + puesto ;
     }
 
 }
